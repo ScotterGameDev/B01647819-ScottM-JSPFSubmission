@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+      
+    <body>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">Scott Morrison Games</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown" style="background-color: grey;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Elements
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="element01.html">Element 1</a></li>
+                          <li><a class="dropdown-item" href="element02.html">Element 2</a></li>
+                          <li><a class="dropdown-item" href="element03.html">Element 3</a></li>
+                          <li><a class="dropdown-item" href="element04.html">Element 4</a></li>
+                          <li><a class="dropdown-item" href="element05.html">Element 5</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="documentation.html">Documentation</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item" style="background-color: grey;">
+                    <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item" style="background-color: grey;">
+                    <a class="nav-link" href="mywork.html">My Work</a>
+                    </li>
+                    <li class="nav-item" style="background-color: grey;">
+                    <a class="nav-link" href="showreel.html">Showreel</a>
+                    </li>                    
+                    <li class="nav-item" style="background-color: grey;">
+                    <a class="nav-link" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item" style="background-color: grey;">
+                    <a class="nav-link" href="contact.html">Contact Information</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--HEADER AND OPENING PARAGRAPH-->
+        <div class="container h-100 d-flex justify-content-center">
+            <h1>Documentation</h1>
+        </div>        
+        <div class="container h-100 d-flex justify-content-center">
+            <h2>Lava Hopper</h2>
+        </div>
+        
+        <div class="container h-100 d-flex justify-content-center">
+            <p>Lava Hopper is a game where the player needs to navigate their way through a difficult pathway in order to get to the other side and escape the lava!<br>
+                I have created Lava hopper using many different techniques and will touch on some of them here<br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <h3><br>Building The Level</h3>
+        </div>        
+        
+        <div class="container h-100 d-flex justify-content-center">
+            <h4>Lava</h4>
+        </div>
+        
+        <div class="container h-100 d-flex justify-content-center">
+            <p>When it came to building the level, I began with a terrain built from a height map. This allowed me to encase the player in the level and have the<br>
+                play area be obvious to the player. I done this by creating a height map which gave an indented look to the level, allowing me to then create<br>
+                'grounds'. These grounds consisted of one ground which would be the rotating lava which would not detect collisions and then another<br>
+                (which would be slightly below) which would gather collisions. I done this as when I added collisions to the rotating ground, it would stop rotating.<br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/CodeSnippets/Lava1.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/CodeSnippets/Lava2.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/LevelExamples/LavaExample.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <h4><br>Lights</h4>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p>Next up was the level lighting. As you can see above, the level had the look I was going for but it was missing something. I decided to add some semi-intense<br>
+                red lighting which really helped the level and lava look much more menacing. To begin with, the first function is creating a hemispheric light that will<br>
+                light the whole scene so the level is at least visible to begin with. Next I created the main red spotlight that would cast over the whole level, making it<br>
+                seem as if the red light was coming from the lava, using diffuse and specular to ensure it spreads out and affects other lights too. Thirdly, I added a miniature<br>
+                spotlight over the end level goal, to try and make it stand out to the player as a place they need to reach.<br>
+                <br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/CodeSnippets/Light1.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/CodeSnippets/Light2.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/CodeSnippets/Light3.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/LevelExamples/LightsExample.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <h4>Player Character</h4>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p>The player character was mainly chosen to resemble a sort of test dummy look. Mainly because this is the exact kind of position that only a test dummy<br>
+                would find themselves in. Using this model, I was able to attach animations and also look for collisions with other objects too! Adding these things<br>
+                brought much more life to the game as well as handled the main win and loss conditions. Firstly, the movement; By checking for which key has been<br>
+                pressed, the player character will either move forward by using the "moveWithCollisions" method, backwards by using the same method but with 'minus' speed<br>
+                or rotate left and right by checking the button and then rotating in the correct direction at the set rotation speed.<br>
+                <br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/CodeSnippets/PlayerInput.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p>Secondly, the collisions were also handled inside the players movement script. This was done as the game is handled through the player colliding with<br>
+                and interacting with certain objects to both win or lose. If the player collides with the lava, then the game is lost, however if the player collides<br>
+                with the end goal object, then they win the game! So, this code will check if the player is interacting with the platforms and return a console message<br>
+                to ensure the player is in fact on the platforms and not hitting the lava. Then, the collision is checking if the player has collided with the<br>
+                level objective floating box, if so, reset the players position back to the beginning and reset the rotation too. Then, create an audio method to play<br>
+                the winning sound, then play it and set the scene index to load the 'game won' scene. This is then done again but for if the player has fallen off the<br>
+                level and hit the lava, the player will be reset, although no noise will play and the player will be sent to the 'you lost' scene.
+                <br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/CodeSnippets/PlayerCol.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p>Thirdly, the players animations. This script will set a boolean for if the object is currently animating or not. This is done by checking if the player is<br>
+                moving and has already started animating. If so, the code will only be called once, whereas if we didn't check if the player was animating, the code would<br>
+                continue to be called and would result in major frame rate issues as the game went on. This block of code also checks if the player<br>
+                is still playing the walking animation but is not moving. In which case, play the idle animation and reset the original animation trigger boolean. Doing so<br>
+                so the whole thing can be re-triggered again when the player starts moving again.
+                <br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/CodeSnippets/PlayerAnim.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/LevelExamples/PlayerExample.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <h3>Main Menu</h3>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <h4>Main Menu Button</h4>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br>Lastly, I created a button to allow the player to go from the main menu to the game. This was coloured to suit the red themes going through the geame<br>
+                already and was also done to stand out from the very dark background. To create the button I used the GUI method to create a simple button. I created<br>
+                parameters to decide where the button should be placed in the scene, how wide and tall it should be, the button colour, how smoothed out the edges are and<br>
+                then the buttons background colour. Below that I created two sounds to play when the button is pressed, one to register the button click and another to play<br>
+                throughout the level, making sure that one is set to loop. Then, when the button is pressed, I play the two sounds and change the scene.<br>
+                This was also used to create the 'Return To Menu' buttons on both of the 'Game Won' and 'Game Lost' screens.
+                <br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/CodeSnippets/MainMenuButton.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <img src="Assets/LevelExamples/MainMenuButtonExample.png" class="img-fluid" alt="Responsive image">
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+
+        <div class="container h-100 d-flex justify-content-center">
+            <p>References:<br>
+                Dummy Model: https://doc.babylonjs.com/toolsAndResources/assetLibraries/availableMeshes<br>          
+                Skybox Material: https://doc.babylonjs.com/toolsAndResources/assetLibraries/availableTextures<br>
+                Terrain Heightmap: https://assets.babylonjs.com/environments/villageheightmap.png<br>
+                </p>
+        </div>
+
+        
+        <div class="container h-100 d-flex justify-content-center">
+            <p><br></p>
+        </div>
+    </body>
+</html>
